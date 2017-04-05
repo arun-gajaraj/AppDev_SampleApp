@@ -12,12 +12,55 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HomePage"
-        android:layout_marginTop="33dp"
+        android:text="Hi Welcome !"
+        android:id="@+id/welcomeText"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:clickable="true"
+        android:backgroundTint="#b66d6d"
+        android:backgroundTintMode="multiply"
+        android:textIsSelectable="true"
+        android:theme="@style/Base.AlertDialog.AppCompat.Light"
+        android:visibility="visible"
+        android:textStyle="normal|bold|italic"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter >"
+        android:id="@+id/enterButton"
+        android:onClick="clickFunction"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="138dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am"
+        android:id="@+id/iAm"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_below="@+id/welcomeText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="119dp"
-        android:layout_marginStart="119dp"
-        android:id="@+id/homepageTitle" />
+        android:layout_marginTop="87dp"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/nameField"
+        android:layout_alignBottom="@+id/iAm"
+        android:layout_toRightOf="@+id/iAm"
+        android:layout_toEndOf="@+id/iAm"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
 </RelativeLayout>
